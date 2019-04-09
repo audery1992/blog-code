@@ -235,3 +235,15 @@ $ git branch -d dev
 ```
 
 因为创建、合并和删除分支非常快，所以Git鼓励你使用分支完成某个任务，合并后再删掉分支，这和直接在master分支上工作效果是一样的，但过程更安全。
+
+# windows上github仓库
+1、右键：git Bash Here
+2、ssh-keygen -t rsa -C "ex@qq.com"
+3、cat ~/.ssh/id_rsa.pub
+4、将ssh复制到github-》setting-》ssh里面
+5、git config --global user.email "ex@qq.com"
+6、git config --global user.name "你的用户名"
+7、 ssh -T git@github.com
+8、右键：git create responsitory here
+9、commit-》push（push时选择destination-》remote-》manage-》目标仓库的git地址）
+
